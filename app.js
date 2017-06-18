@@ -18,8 +18,11 @@ var commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
 
+//local dev link
+//mongoose.connect("mongodb://localhost/yelpCamp");
 
-mongoose.connect("mongodb://localhost/yelpCamp");
+//deployed link
+mongoose.connect("mongodb://ankurgupta1995:Kakashikalypso123@ds149567.mlab.com:49567/ankurgupta-db");
 mongoose.Promise = global.Promise;
 
 
